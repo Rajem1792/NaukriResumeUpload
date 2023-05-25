@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Naukri.com.Naukri.com.NoidaProfileTestClass">
+      <class name="Naukri.com.Naukri.com.BengloreProfileTestClass">
         <methods>
-          <include name="openChromebrowser"/>
           <include name="deleteanduploadResumeonNaukriPune"/>
           <include name="deleteanduploadResumeonNaukriNoida"/>
+          <include name="deleteanduploadResumeonNaukriBanglore"/>
+          <include name="openChromebrowser"/>
         </methods>
-      </class> <!-- Naukri.com.Naukri.com.NoidaProfileTestClass -->
+      </class> <!-- Naukri.com.Naukri.com.BengloreProfileTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
