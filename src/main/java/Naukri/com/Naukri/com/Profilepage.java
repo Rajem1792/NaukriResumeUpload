@@ -36,11 +36,11 @@ public class Profilepage {
 	}
 	public void uploadResume(WebDriver driver)
 	{
-		//Uploadresume.click();
+		//Uploadresume.sendKeys("");
 		
 		// To upload the Resume
       
-        
+         
         Actions act=new Actions(driver);
         act.moveToElement(Uploadresume).click().build().perform();
 	}

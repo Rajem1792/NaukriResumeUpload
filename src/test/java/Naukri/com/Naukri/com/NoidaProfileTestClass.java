@@ -78,7 +78,7 @@ public class NoidaProfileTestClass extends BaseClass {
 		
 		 // To execute the exe file from to upload
         
-        Runtime.getRuntime().exec("\"D:\\AutoITFiles\\puneResumeUpload.exe\"");
+        Runtime.getRuntime().exec("\"D:\\AutoITFiles\\CDriveresumeUpload.exe\"");
         Thread.sleep(10000);
         driver.navigate().refresh();  
         
@@ -90,38 +90,39 @@ public class NoidaProfileTestClass extends BaseClass {
         driver.quit();
 	}
 	
-	@Test
-	public void deleteanduploadResumeonNaukriBanglore() throws EncryptedDocumentException, IOException, InterruptedException
-	{
-		HM=new HomePage(driver);
-		LG=new Loginpage(driver);
-		PP=new Profilepage(driver);
-		
-		
-		HM.clickOnloginbuton();
-		LG.inputUserName(UtilityClass.Data(6, 0));
-		LG.inputPassword(UtilityClass.Data(7, 0));
-		LG.clickOnLoginButton();
-		HM.clickOnviewProfile();
-		PP.clickondeletebutton();
-		PP.clickondeleteAgainbutton();
-		Thread.sleep(5000);
-		driver.navigate().refresh();
-		PP.uploadResume(driver);
-		
-		
-		 // To execute the exe file from to upload
-        
-        Runtime.getRuntime().exec("\"D:\\AutoITFiles\\bengloreResumeUpload.exe\"");
-        Thread.sleep(10000);
-        driver.navigate().refresh();    
-        
-        Thread.sleep(3000);
-       PP.clickOnProfileIcon();
-       PP.clickonLogout();
-       
-    
-	}
+//	@Test
+//	public void deleteanduploadResumeonNaukriBanglore() throws EncryptedDocumentException, IOException, InterruptedException
+//	{
+//		HM=new HomePage(driver);
+//		LG=new Loginpage(driver);
+//		PP=new Profilepage(driver);
+//		
+//		
+//		HM.clickOnloginbuton();
+//		LG.inputUserName(UtilityClass.Data(6, 0));
+//		LG.inputPassword(UtilityClass.Data(7, 0));
+//		LG.clickOnLoginButton();
+//		HM.clickOnviewProfile();
+//		PP.clickondeletebutton();
+//		PP.clickondeleteAgainbutton();
+//		Thread.sleep(5000);
+//		driver.navigate().refresh();
+//		PP.uploadResume(driver);
+//		
+//		
+//		 // To execute the exe file from to upload
+//        
+//     //   Runtime.getRuntime().exec("\"D:\\AutoITFiles\\bengloreResumeUpload.exe\"");
+//        Runtime.getRuntime().exec("\"D:\\AutoITFiles1\\HyderabadResumeUpload.exe\"");
+//        Thread.sleep(10000);
+//        driver.navigate().refresh();    
+//        
+//        Thread.sleep(3000);
+//       PP.clickOnProfileIcon();
+//       PP.clickonLogout();
+//       
+//    
+	//}
 	
 	
 }

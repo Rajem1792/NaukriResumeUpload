@@ -7,11 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Loginpage {
 
-	@FindBy(xpath="//input[@placeholder='Enter your active Email ID / Username']") WebElement UserName;
+	@FindBy(xpath="//input[@placeholder='Enter your active Email ID / Username']") private WebElement UserName;
 	
-	@FindBy(xpath="//input[@placeholder='Enter your password']") WebElement PassWord;
+	@FindBy(xpath="//input[@placeholder='Enter your password']")private WebElement PassWord;
 	
-	@FindBy(xpath="//button[@type='submit']") WebElement Loginbutton;
+	@FindBy(xpath="//button[@type='submit']") private WebElement Loginbutton;
 	
 	
 	public Loginpage (WebDriver driver)

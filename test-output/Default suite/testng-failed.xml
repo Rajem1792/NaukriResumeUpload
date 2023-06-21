@@ -7,7 +7,6 @@
         <methods>
           <include name="deleteanduploadResumeonNaukriPune"/>
           <include name="deleteanduploadResumeonNaukriNoida"/>
-          <include name="deleteanduploadResumeonNaukriBanglore"/>
           <include name="openChromebrowser"/>
         </methods>
       </class> <!-- Naukri.com.Naukri.com.BengloreProfileTestClass -->
